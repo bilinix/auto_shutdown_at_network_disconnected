@@ -1,7 +1,7 @@
 @echo off
 
-rem ä¿å­˜æ—¶ç¼–ç åŠ¡å¿…é€‰ANSI
-rem æœ‰ç”¨å°±ç»™ä¸ªèµå‘—
+rem ±£´æÊ±±àÂëÎñ±ØÑ¡ANSI
+rem ÓĞÓÃ¾Í¸ø¸öÔŞßÂ
 
 set IP=192.168.1.1
 set /a count=0
@@ -9,7 +9,7 @@ set /a max_times=60
 
 :def_ping
 cls
-echo åœ¨äº‹ä»¶æŸ¥çœ‹å™¨ä¸­æœç´¢1074æŸ¥çœ‹å…³æœºå†å²è®°å½•
+echo ÔÚÊÂ¼ş²é¿´Æ÷ÖĞËÑË÷1074²é¿´¹Ø»úÀúÊ·¼ÇÂ¼
 echo.
 echo default ping mode.
 timeout 3 /nobreak
@@ -23,13 +23,13 @@ goto try_again
 :try_again
 ping -w 1000 -n 2 %IP% | find "TTL"
 if %errorlevel%==0 (
-msg * /time:10 "ç½‘ç»œè¿æ¥å·²æ¢å¤"
+msg * /time:10 "ÍøÂçÁ¬½ÓÒÑ»Ö¸´"
 set /a count=0
 goto def_ping
 ) else set /a count+=1
 if %count% equ 1 (
 echo The first time network disconnect at %time:~0,8%
-msg * /time:30 "ç½‘ç»œè¿æ¥è¶…æ—¶"
+msg * /time:30 "ÍøÂçÁ¬½Ó³¬Ê±"
 )
 echo count == %count%/%max_times%
 if %count% equ %max_times% (goto shutdown) else goto try_again
@@ -37,10 +37,10 @@ if %count% equ %max_times% (goto shutdown) else goto try_again
 :shutdown
 echo.
 echo Shutting down.
-echo ä½ çš„ç”µè„‘ä¼šåœ¨10ç§’å†…å…³æœº
-echo å¦‚éœ€å–æ¶ˆè¯·æŒ‰ win+r è¾“å…¥ shutdown -a
+echo ÄãµÄµçÄÔ»áÔÚ10ÃëÄÚ¹Ø»ú
+echo ÈçĞèÈ¡ÏûÇë°´ win+r ÊäÈë shutdown -a
 msg * /time:10 "Windows will shutdown in 10 seconds."
-shutdown -s -t 10 -c "è®¾ç½®çš„IPåœ°å€ä¸å¯è¾¾" -d u:6:11
+shutdown -s -t 10 -c "ÉèÖÃµÄIPµØÖ·²»¿É´ï" -d u:6:11
 timeout 10 /nobreak
 pause
-echo ä½œè€…ï¼šå¤œå¾®å†°èŒ https://www.bilibili.com/read/cv29637255/ å‡ºå¤„ï¼šbilibili
+echo ×÷Õß£ºÒ¹Î¢±ùÃÈ https://www.bilibili.com/read/cv29637255/ ³ö´¦£ºbilibili
