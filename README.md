@@ -10,7 +10,7 @@
 - `max_times` 为最大尝试次数，一次约等于一秒，但不完全等于，请注意
 
 ## 注意事项
-- 下载下来后先检查一下编码是不是`ANSI`，如果不是就手动另存为成ANSI一下
+- 下载下来后先检查一下编码是不是`ANSI`或者`GB2312`，如果不是就记事本手动另存为成ANSI一下
 
 ---
 # English
@@ -21,7 +21,12 @@ sorry for my english.
 - `max_times` is the max retries.one time ≈ one second.
 
 ## others
-- please check the encoding after download this file.if it is not `ANSI`, please do a `save as`.
+- `在事件查看器中搜索1074查看关机历史记录` == `Find shutdown history at Event viewer(eventvwr). code:1074`
+- `网络连接已恢复` == `Network restored`
+- `网络连接超时` == `Network timeout`
+- `你的电脑会在10秒内关机` == `Your PC will shutdown in 10s.`
+- `如需取消请按 win+r 输入 shutdown -a` == `Press win+r and type shutdown -a to cancel.`
+- `设置的IP地址不可达` == `IP address is unreachable.`
 
 ---
 # 日本語

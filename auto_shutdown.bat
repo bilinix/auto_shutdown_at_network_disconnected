@@ -43,4 +43,4 @@ msg * /time:10 "Windows will shutdown in 10 seconds."
 shutdown -s -t 10 -c "设置的IP地址不可达" -d u:6:11
 timeout 10 /nobreak
 pause
-echo 作者：夜微冰萌 https://www.bilibili.com/read/cv29637255/#reply232955413536 出处：bilibili
+echo 作者：夜微冰萌 https://www.bilibili.com/read/cv29637255/ 出处：bilibili
